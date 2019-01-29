@@ -1,0 +1,17 @@
+server:
+  port: 7101
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://guest:guest@localhost:7101/
+  server:
+    enable-self-preservation: false
+
+spring:
+  security:
+    user:
+      name: guest
+      password: guest
